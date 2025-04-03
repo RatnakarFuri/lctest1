@@ -67,13 +67,13 @@ const LoanSlider = ({
   };
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-4">
       <div className="flex justify-between items-center">
-        <label className="text-sm font-medium">{label}</label>
+        <label className="text-sm font-medium text-apple-text">{label}</label>
         <div className="flex items-center">
           {unit && <span className="text-sm mr-2 text-muted-foreground">{unit}</span>}
           <Input
-            className="w-24 h-8 text-right"
+            className="w-28 h-9 text-right rounded-lg border-gray-200 focus-visible:ring-apple-blue text-apple-text"
             value={inputValue}
             onChange={handleInputChange}
             onBlur={handleInputBlur}
@@ -87,7 +87,7 @@ const LoanSlider = ({
         max={max}
         step={step}
         onValueChange={handleSliderChange}
-        className="cursor-pointer"
+        className="cursor-pointer h-2"
       />
       <div className="flex justify-between text-xs text-muted-foreground">
         <span>{formatValue(min)}</span>

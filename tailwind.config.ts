@@ -64,11 +64,17 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				loan: {
-					primary: '#0066cc',
-					secondary: '#00a3cc',
-					accent: '#66ccff',
-					light: '#e6f7ff',
-					dark: '#004080'
+					primary: '#0066cc',   // Apple blue
+					secondary: '#06c',    // Apple accent blue
+					accent: '#2997ff',    // Apple light blue
+					light: '#f5f5f7',     // Apple light gray
+					dark: '#1d1d1f'       // Apple dark text
+				},
+				apple: {
+					gray: '#f5f5f7',
+					text: '#1d1d1f',
+					blue: '#0066cc',
+					highlight: '#2997ff'
 				}
 			},
 			borderRadius: {
@@ -97,6 +103,9 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				'sf-pro': ['-apple-system', 'BlinkMacSystemFont', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Ubuntu', 'Roboto', 'Noto', 'Arial', 'sans-serif']
 			}
 		}
 	},

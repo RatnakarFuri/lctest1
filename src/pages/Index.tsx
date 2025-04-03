@@ -4,15 +4,26 @@ import { Calculator } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-loan-light">
-      <div className="container max-w-4xl py-8 px-4 md:px-8 mx-auto">
-        <header className="mb-12 text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Calculator className="w-8 h-8 text-loan-primary" strokeWidth={1.5} />
-            <h1 className="text-3xl font-bold text-loan-dark">Loan Calculator</h1>
+    <div className="min-h-screen bg-apple-gray">
+      {/* Apple-style navigation bar */}
+      <nav className="bg-[rgba(245,245,247,0.8)] backdrop-blur-md border-b border-gray-200/30 sticky top-0 z-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="flex justify-between items-center py-4">
+            <div className="flex items-center">
+              <Calculator className="w-5 h-5 text-apple-text" strokeWidth={1.5} />
+              <span className="ml-2 text-sm font-medium text-apple-text">Loan Calculator</span>
+            </div>
           </div>
-          <p className="text-muted-foreground max-w-xl mx-auto">
-            Calculate your monthly payments, total interest, and more with our easy-to-use loan calculator.
+        </div>
+      </nav>
+
+      <div className="container max-w-5xl py-12 px-4 md:px-8 mx-auto">
+        <header className="mb-16 text-center">
+          <h1 className="text-5xl font-semibold text-apple-text mb-5 tracking-tight">
+            Loan Calculator
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Calculate your monthly payments, total interest, and more with our simple tool.
           </p>
         </header>
         
@@ -20,8 +31,8 @@ const Index = () => {
           <LoanCalculator />
         </main>
         
-        <footer className="mt-16 pt-6 border-t border-muted text-sm text-center text-muted-foreground">
-          <p>© {new Date().getFullYear()} Loan Calculator. All rights reserved.</p>
+        <footer className="mt-24 pt-8 border-t border-gray-200/50 text-sm text-center text-muted-foreground">
+          <p>© {new Date().getFullYear()} Apple-style Loan Calculator. All rights reserved.</p>
         </footer>
       </div>
     </div>

@@ -87,10 +87,10 @@ const LoanCalculator = () => {
   }, [loanAmount, interestRate, loanTerm, toast]);
 
   return (
-    <div className="grid md:grid-cols-2 gap-8">
-      <Card className="border-muted shadow-md">
-        <CardContent className="pt-6">
-          <div className="space-y-6">
+    <div className="grid md:grid-cols-2 gap-10">
+      <Card className="border-0 rounded-2xl shadow-lg bg-white">
+        <CardContent className="pt-6 px-6">
+          <div className="space-y-8">
             <LoanSlider
               value={loanAmount}
               setValue={setLoanAmount}
